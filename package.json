@@ -1,0 +1,25 @@
+{
+  "name": "slush-npm-pkg",
+  "version": "0.1.0",
+  "description": "A Slush generator for npm package used ES6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbxeagle/slush-npm-pkg.git"
+  },
+  "keywords": [
+    "slush",
+    "generator",
+    "npm",
+    "package"
+  ],
+  "author": "hbxeagle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hbxeagle/slush-npm-pkg/issues"
+  },
+  "homepage": "https://github.com/hbxeagle/slush-npm-pkg#readme"
+}
