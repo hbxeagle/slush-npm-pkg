@@ -3,7 +3,7 @@ module.exports = (function () {
     name: 'stack',
     type: 'list',
     message: 'What stack would you like to use?',
-    choices: ['Command', 'Node', 'Browser', 'Node&Command']
+    choices: ['Command', 'Node&Browser']
   }];
   return prompts;
 })();

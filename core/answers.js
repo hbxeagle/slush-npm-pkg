@@ -28,6 +28,9 @@ module.exports = function (prompts) {
       if (answers2.author) {
         answers2.capitalizedAuthor = _.capitalize(answers2.author);
       }
+      if(answers2.keywords) {
+        answers2.keywords = "[\"" + answers2.keywords.split(' ').join('", "') + "\"]";
+      }
       resolve(answers2);
     });
   });

@@ -7,16 +7,8 @@ module.exports = {
     template: "command/**/*",
     dist: './'
   }, {
-    stack: "Node",
-    template: "node/**/*",
-    dist: './'
-  }, {
-    stack: "Browser",
-    template: "browser/**/*",
-    dist: './'
-  }, {
-    stack: "Node&Command",
-    template: "node_command/**/*",
+    stack: "Node&Browser",
+    template: "common/**/*",
     dist: './'
   }]
 }

@@ -3,28 +3,30 @@
   "description": "<%= description %>",
   "version": "<%= version %>",
   "main": "dist/<%= name %>.js",
-  "bin": {
-    "<%= command %>": "bin/command"
-  },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/index.js",
     "build": "gulp build",
-    "pretest": "npm run build & npm link",
+    "pretest": "npm run build",
+    "test": "./node_modules/mocha-phantomjs/bin/mocha-phantomjs test/index.html",
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "commander": "^2.9.0"
   },
   "devDependencies": {
+    "babel-loader": "^6.2.7",
+    "babel-polyfill": "^6.6.1",
     "babel-preset-es2015": "^6.1.18",
+    "chai": "^3.5.0",
+    "css-loader": "^0.25.0",
     "del": "^2.1.0",
     "gulp": "^3.6.0",
-    "gulp-babel": "^6.1.0",
     "gulp-load-plugins": "^0.7.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.1",
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "gulp-webpack": "^1.5.0",
+    "mocha": "^2.4.5",
+    "mocha-phantomjs": "^4.1.0"
   },
   "keywords": <%= keywords %>,
   "author": "<%= author %>",

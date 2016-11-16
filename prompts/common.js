@@ -24,10 +24,6 @@ module.exports = (function () {
     name: 'email',
     message: 'What is your company/author email?',
     default: defaults.email
-  }, {
-    name: 'gitRepository',
-    message: 'What is your git repository?',
-    default: defaults.repositoryUrl
   }];
   return prompts;
 })();
